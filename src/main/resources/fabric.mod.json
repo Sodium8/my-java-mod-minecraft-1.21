@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "testing-mod",
+	"version": "${version}",
+	"name": "Testing mod",
+	"description": "I test my skills in java n mod creating (c) Sodium",
+	"authors": [
+		"Sodium"
+	],
+	"contact": {
+		"homepage": "https://Sodium.net/",
+		"sources": "https://github.com/Tutorials-By-Kaupenjoe/Fabric-Tutorial-1.21.X"
+	},
+	"license": "MIT",
+	"icon": "assets/ICON.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sodium.testingmod.TestingMod"
+		],
+		"fabric-datagen": [
+			"net.sodium.testingmod.TestingModDataGenerator"
+		],
+		"client": [
+			"net.sodium.testingmod.TeatModClient"
+		]
+	},
+	"mixins": [
+		"testing-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
